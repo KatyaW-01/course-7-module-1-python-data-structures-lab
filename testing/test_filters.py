@@ -1,6 +1,6 @@
 import pytest
 from lib.filters import filter_students_by_major
-from lib.student_data import students
+from lib.student_data import students, display_students
 
 def test_filter_students_by_major():
     cs_students = filter_students_by_major(students, "Computer Science")
