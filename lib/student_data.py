@@ -22,6 +22,5 @@ def display_student_details(student_db):
   for sid, details in student_db.items():
     print(f"ID: {sid} | Name: {details['name']} | Major: {details['major']} | Courses: {details['courses']}")
 
-display_students(students)
-display_student_details(student_dict)
+
 
