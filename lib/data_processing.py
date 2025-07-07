@@ -1,4 +1,3 @@
-# This module contains functions to process student data.
 student = (101, "Alice Johnson", "Computer Science")
 students = [
     (101, "Alice Johnson", "Computer Science"),
