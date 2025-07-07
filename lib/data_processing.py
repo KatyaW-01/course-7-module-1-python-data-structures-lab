@@ -1,20 +1,24 @@
 # This module contains functions to process student data.
+student = (101, "Alice Johnson", "Computer Science")
+students = [
+    (101, "Alice Johnson", "Computer Science"),
+    (102, "Bob Smith", "Mathematics"),
+    (103, "Charlie Davis", "Physics"),
+    (104, "David Wilson", "Computer Science"),
+    (105, "Eve Lewis", "Mathematics"),
+]
 
 def format_student_data(student):
-    """
-    Format student data for display.
-    The function should return a formatted string containing:
-    - Student ID
-    - Student Name
-    - Major
-    """
-    # TODO: Implement this function
-    pass
+    sid = student[0]
+    name = student[1]
+    major = student[2]
+    print (f"ID: {sid} | Name: {name} | Major: {major}")
+    return (f"ID: {sid} | Name: {name} | Major: {major}")
+   
 
 def display_students(student_list):
-    """
-    Display all students in a formatted way.
-    Loop through the student_list and print each student using format_student_data().
-    """
-    # TODO: Implement this function
-    pass
+    for student in student_list:
+        format_student_data(student)
+
+format_student_data(student)
+display_students(students)
